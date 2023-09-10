@@ -13,15 +13,37 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        marquee: "marquee 15s linear infinite",
+        marquee2: "marquee2 15s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": {
+            transform: "translateX(0%)",
+          },
+          "100%": {
+            transform: "translateX(-100%)",
+          },
+        },
+        marquee2: {
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(0%)",
+          },
+        },
+      },
+      fontFamily: {
+        saint: ["var(--font-saint)"],
+        destra: ["var(--font-destra)"],
+        monor: ["var(--font-monor)"],
+        bebas: ["var(--font-bebas)"],
+        honey: ["var(--font-honey)"],
+      },
     },
-    fontFamily: {
-      saint: ["var(--font-saint)"],
-      destra: ["var(--font-destra)"],
-      monor: ["var(--font-monor)"],
-      bebas: ["var(--font-bebas)"],
-      honey: ["var(--font-honey)"],
-    },
+    plugins: [],
   },
-  plugins: [],
 };
 export default config;
