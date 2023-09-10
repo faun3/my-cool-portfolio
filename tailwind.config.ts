@@ -16,6 +16,11 @@ const config: Config = {
       animation: {
         marquee: "marquee 15s linear infinite",
         marquee2: "marquee2 15s linear infinite",
+        // uncomment the following 2 lines if you want a carousel
+        // that goes Left 2 Right instead of RTL
+        //
+        // marqueeReverse: "marquee 15s linear infinite reverse",
+        // marquee2Reverse: "marquee2 15s linear infinite reverse",
       },
       keyframes: {
         marquee: {
