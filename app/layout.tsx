@@ -1,8 +1,59 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
+
+const saint = localFont({
+  src: [
+    {
+      path: "../public/fonts/SaintRegular.ttf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-saint",
+});
+
+const bebasNeue = localFont({
+  src: [
+    {
+      path: "../public/fonts/BebasNeue-Regular.woff2",
+      weight: "400",
+    },
+  ],
+  variable: "--font-bebas",
+});
+
+const destra = localFont({
+  src: [
+    {
+      path: "../public/fonts/GPDestra-Light.otf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-destra",
+});
+
+const honey = localFont({
+  src: [
+    {
+      path: "../public/fonts/HoneyDemo-Light.otf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-honey",
+});
+
+const monor = localFont({
+  src: [
+    {
+      path: "../public/fonts/Monor_Regular.otf",
+      weight: "400",
+    },
+  ],
+  variable: "--font-monor",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +66,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${saint.variable} ${bebasNeue.variable} ${monor.variable} ${destra.variable} ${honey.variable}`}
+    >
       <body className={`${workSans.className}`}>{children}</body>
     </html>
   );
