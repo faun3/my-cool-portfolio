@@ -10,7 +10,7 @@ export default function Home() {
       {/* R2L text carousel */}
       {/* credit: https://olavihaapala.fi/2021/02/23/modern-marquee.html */}
       <div
-        className="flex whitespace-nowrap overflow-x-scroll motion-safe:overflow-x-hidden relative group"
+        className="flex whitespace-nowrap overflow-x-scroll motion-safe:overflow-x-hidden relative group overflow-y-hidden"
         aria-hidden="true"
       >
         <div className="fFont creditslex motion-safe:animate-marquee group-hover:pause">
