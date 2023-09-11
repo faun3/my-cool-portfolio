@@ -1,49 +1,23 @@
 "use client";
+import TextMarquee from "@/components/TextMarquee";
+import Image from "next/image";
+import heroImage from "@/public/images/heroImage.jpg";
 
 export default function Home() {
-  const words = "artist,lover,friend,developer,creator,human,dreamer".split(
-    ","
-  );
-  const fonts = "font-saint,font-destra,font-honey".split(",");
   return (
-    <main>
-      {/* R2L text carousel */}
-      {/* credit: https://olavihaapala.fi/2021/02/23/modern-marquee.html */}
-      <div
-        className="flex whitespace-nowrap overflow-x-scroll motion-safe:overflow-x-hidden relative group overflow-y-hidden"
-        aria-hidden="true"
-      >
-        <div className="fFont creditslex motion-safe:animate-marquee group-hover:pause">
-          {words.map((word, idx) => {
-            return (
-              <span
-                key={idx}
-                className={`${
-                  fonts[idx % fonts.length]
-                } text-[128px] m-4 uppercase`}
-              >
-                {word}
-              </span>
-            );
-          })}
+    <>
+      <div className="">
+        <div className="relative left-[calc(32px+50%)] md:left-[calc(80px+50%)] lg:left-1/2 w-[900px] h-[600px] -translate-x-1/4">
+          {/* image is invalid, the idea sort of sucks */}
+          {/* new idea: make a pixel spray thing that your text can loop over */}
+          {/* the best color for it would probably be gray */}
+          {/* position it offset so it peeks from the right side (just like this stupid image idea) */}
+          <Image src={"/"} fill={true} alt="creek in a forest"></Image>
         </div>
-        <div className="absolute top-0 flex motion-safe:animate-marquee2 group-hover:pause">
-          {words.map((word, idx) => {
-            return (
-              <span
-                key={idx}
-                className={`${
-                  fonts[idx % fonts.length]
-                } text-[128px] m-4 uppercase`}
-              >
-                {word}
-              </span>
-            );
-          })}
-        </div>
+        <TextMarquee />
       </div>
 
-      <div>
+      <main className="md:w-[864px] lg:w-[1184px] w-[296px] mx-auto">
         <p>Font credits</p>
         <div className="flex flex-col gap-4">
           <span className="font-honey uppercase">Honey</span>
@@ -51,7 +25,7 @@ export default function Home() {
           <span className="font-destra">Destra</span>
           <span className="font-bebas">BEBAS NEUE</span>
         </div>
-      </div>
-    </main>
+      </main>
+    </>
   );
 }

@@ -63,7 +63,7 @@ export default function RootLayout({
       <body
         className={`${workSans.className} ${honey.variable} ${destra.variable} ${bebasNeue.variable}`}
       >
-        {children}
+        <div>{children}</div>
       </body>
     </html>
   );
