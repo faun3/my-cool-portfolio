@@ -19,7 +19,7 @@ export default function TextMarquee() {
               key={idx}
               className={`${
                 fonts[idx % fonts.length]
-              } text-[128px] m-4 uppercase`}
+              } text-[8rem] m-4 uppercase`}
             >
               {word}
             </span>
@@ -33,7 +33,7 @@ export default function TextMarquee() {
               key={idx}
               className={`${
                 fonts[idx % fonts.length]
-              } text-[128px] m-4 uppercase`}
+              } text-[8rem] m-4 uppercase`}
             >
               {word}
             </span>

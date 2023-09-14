@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div>
+    <div className="mb-[8rem]">
       <p className="heading-2">More cool text here</p>
       <p className="body-2">
         This should be some about me text. Cool Lorem ipsum dolor sit amet.
