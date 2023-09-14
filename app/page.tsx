@@ -2,8 +2,27 @@
 import TextMarquee from "@/components/TextMarquee";
 import Image from "next/image";
 import Mission from "@/components/Mission";
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
 
 export default function Home() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const lenis = new Lenis();
+
+    lenis.on("scroll", (e: any) => {
+      console.log(e);
+    });
+
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  }, []);
+
   return (
     <>
       <div className="">
@@ -12,7 +31,10 @@ export default function Home() {
           {/* new idea: make a pixel spray thing that your text can loop over */}
           {/* the best color for it would probably be gray */}
           {/* position it offset so it peeks from the right side (just like this stupid image idea) */}
-          <Image src={"/"} fill={true} alt="creek in a forest"></Image>
+          <Image
+            src={"/"}
+            fill={true}
+            alt="creek in a forest"></Image>
         </div>
         <TextMarquee />
       </div>

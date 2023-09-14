@@ -58,11 +58,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${saint.variable} ${bebasNeue.variable} ${destra.variable} ${honey.variable}`}
-    >
+      className={`${saint.variable} ${bebasNeue.variable} ${destra.variable} ${honey.variable}`}>
       <body
-        className={`${workSans.className} ${honey.variable} ${destra.variable} ${bebasNeue.variable}`}
-      >
+        className={`${workSans.className} ${honey.variable} ${destra.variable} ${bebasNeue.variable}`}>
         <div>{children}</div>
       </body>
     </html>
