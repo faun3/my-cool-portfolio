@@ -7,3 +7,13 @@
     animation-play-state: paused;
   }
 }
+
+@layer base {
+  .heading-2 {
+    @apply font-bebas text-[4rem];
+  }
+
+  .body-2 {
+    @apply text-[2rem];
+  }
+}

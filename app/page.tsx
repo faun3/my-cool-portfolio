@@ -2,6 +2,7 @@
 import TextMarquee from "@/components/TextMarquee";
 import Image from "next/image";
 import Mission from "@/components/Mission";
+import About from "@/components/About";
 import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 
@@ -41,6 +42,7 @@ export default function Home() {
 
       <main className="md:w-[864px] lg:w-[1184px] w-[296px] mx-auto">
         <Mission />
+        <About />
         <p>Font credits</p>
         <div className="flex flex-col gap-4">
           <span className="font-honey uppercase">Honey</span>
