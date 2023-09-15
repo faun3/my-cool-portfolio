@@ -7,6 +7,8 @@ import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import TechStack from "@/components/TechStack";
 import Connect from "@/components/Connect";
+import useMousePosition from "@/utils/useMousePosition";
+import { motion } from "framer-motion";
 
 export default function Home() {
   useEffect(() => {
@@ -24,8 +26,17 @@ export default function Home() {
     requestAnimationFrame(raf);
   }, []);
 
+  const mousePos = useMousePosition();
+
   return (
-    <>
+    <div className="cursor-none">
+      <motion.div
+        className="rounded-full w-[1.25rem] h-[1.25rem] bg-black/40 fixed"
+        animate={{
+          x: mousePos.x,
+          y: mousePos.y,
+        }}
+        transition={{ type: "tween", ease: "backOut" }}></motion.div>
       <TextMarquee />
       <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
         <Mission />
@@ -40,6 +51,6 @@ export default function Home() {
           <span className="font-bebas">BEBAS NEUE</span>
         </div>
       </main>
-    </>
+    </div>
   );
 }

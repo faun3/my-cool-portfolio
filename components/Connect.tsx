@@ -2,13 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import githubIcon from "@/public/icons/githubIcon.svg";
 import linkedInIcon from "@/public/icons/linkedInIcon.svg";
+import useMousePosition from "@/utils/useMousePosition";
 
 const Connect = () => {
   return (
     <>
-      <p className="font-bebas text-[4rem] text-center mb-[4rem]">
-        Let&apos;s talk
-      </p>
       <div className="mb-[8rem] bg-[#aba0a0] rounded-[20px] w-fit p-[4rem] px-[6rem] mx-auto">
         <div className="rounded-full aspect-square w-[100%] flex justify-center items-center bg-[#eee8e8] mx-auto mb-[4rem]">
           <Link
