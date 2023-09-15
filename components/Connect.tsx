@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import githubIcon from "@/public/icons/githubIcon.svg";
 import linkedInIcon from "@/public/icons/linkedInIcon.svg";
-import useMousePosition from "@/utils/useMousePosition";
 
 const Connect = () => {
   return (
@@ -23,6 +22,13 @@ const Connect = () => {
               width={48}
               height={48}
               alt="github link"></Image>
+          </Link>
+          <Link href={"#"}>
+            <Image
+              src={linkedInIcon}
+              width={48}
+              height={48}
+              alt="linked in link"></Image>
           </Link>
         </div>
       </div>
