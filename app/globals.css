@@ -16,4 +16,12 @@
   .body-2 {
     @apply text-[2rem];
   }
+
+  .cursor {
+    @apply aspect-square w-[24px] bg-black/40;
+  }
+
+  .cursor-expanded {
+    @apply aspect-square w-[46px] bg-black/80;
+  }
 }
