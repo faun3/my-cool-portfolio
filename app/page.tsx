@@ -57,7 +57,7 @@ export default function Home() {
   return (
     <div className="cursor-none">
       <motion.div
-        className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none flex justify-center items-center"
+        className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none md:flex justify-center items-center md:visible hidden"
         animate={cursorState}
         variants={cursorVariants}
         transition={{ ease: "easeOut", duration: 0.2 }}>
