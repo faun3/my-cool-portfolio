@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import aboutImage from "@/public/images/aboutImage.jpg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -10,12 +12,15 @@ const About = () => {
           This should be some about me text. Cool Lorem ipsum dolor sit amet.
         </p>
       </div>
-      <div className="w-[90%] rounded-[20px] overflow-hidden">
+      <motion.div
+        className="w-[90%] rounded-[20px] overflow-hidden"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}>
         <Image
           className="object-cover"
           src={aboutImage}
           alt="room with plants"></Image>
-      </div>
+      </motion.div>
     </div>
   );
 };

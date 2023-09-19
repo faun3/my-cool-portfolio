@@ -48,7 +48,7 @@ export default function Home() {
     hover: {
       width: 72,
       height: 72,
-      opacity: 0.8,
+      opacity: 0.9,
       x: mousePos.x - 36,
       y: mousePos.y - 36,
     },

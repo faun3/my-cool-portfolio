@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import localFont from "next/font/local";
+import Nav from "@/components/Nav";
 
 const workSans = Work_Sans({ subsets: ["latin"] });
 
@@ -61,7 +62,10 @@ export default function RootLayout({
       className={`${saint.variable} ${bebasNeue.variable} ${destra.variable} ${honey.variable}`}>
       <body
         className={`${workSans.className} ${honey.variable} ${destra.variable} ${bebasNeue.variable}`}>
-        <div>{children}</div>
+        <div>
+          <Nav />
+          {children}
+        </div>
       </body>
     </html>
   );
