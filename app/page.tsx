@@ -1,4 +1,5 @@
 "use client";
+import Projects from "@/components/Projects";
 import TextMarquee from "@/components/TextMarquee";
 import Image from "next/image";
 import Mission from "@/components/Mission";
@@ -81,6 +82,7 @@ export default function Home() {
       <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
         <Mission />
         <About />
+        <Projects />
         {/* this section kinda sucks. I might bin it */}
         {/* <TechStack /> */}
         {/* <Connect /> */}

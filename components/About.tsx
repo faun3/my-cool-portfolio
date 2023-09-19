@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="mb-[8rem] flex flex-col md:flex-row justify-center items-center gap-[8rem]">
+    <div className="mb-[8rem] flex flex-col-reverse md:flex-row justify-center items-center gap-[8rem]">
       <div>
         <p className="heading-2">More cool text here</p>
         <p className="body-2">
@@ -13,7 +13,7 @@ const About = () => {
         </p>
       </div>
       <motion.div
-        className="w-[90%] rounded-[20px] overflow-hidden"
+        className="w-full rounded-[20px] overflow-hidden"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}>
         <Image
