@@ -28,7 +28,7 @@ const Nav = () => {
       className={`sticky top-[1rem] left-0 w-full flex justify-center origin-top ${
         folded && "scale-y-0"
       } transition-transform delay-200 z-[100]`}>
-      <div className="w-[80%] flex justify-between items-center backdrop-blur-lg rounded-[10px]">
+      <div className="w-[80%] flex justify-between items-center backdrop-blur-lg rounded-[10px] bg-[rgba(230,230,230,0.6)] px-[1rem]">
         <div className="rounded-[10px] flex items-center gap-[1rem]">
           <Image
             src={Logo}
@@ -38,7 +38,7 @@ const Nav = () => {
             aria-hidden="true"></Image>
           <p className="font-bold tracking-wider text-[1.25rem]">faun3</p>
         </div>
-        <div className="rounded-[10px] text-[1.125rem] px-[1rem] py-[0.5rem] relative">
+        <div className="rounded-[10px] text-[1.125rem] px-[1rem] py-[0.5rem] text-black z-50">
           <ul className="flex gap-[2rem] font-semibold mix-blend-difference">
             <li>Projects</li>
             <li>Connect</li>
