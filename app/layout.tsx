@@ -62,7 +62,7 @@ export default function RootLayout({
       className={`${saint.variable} ${bebasNeue.variable} ${destra.variable} ${honey.variable}`}>
       <body
         className={`${workSans.className} ${honey.variable} ${destra.variable} ${bebasNeue.variable}`}>
-        <div>
+        <div className="bg-[#dfdfdf]">
           <Nav />
           {children}
         </div>

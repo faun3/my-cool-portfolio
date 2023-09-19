@@ -25,20 +25,21 @@ const Nav = () => {
 
   return (
     <nav
-      className={`sticky top-0 left-0 w-full flex justify-center origin-top ${
+      className={`sticky top-[1rem] left-0 w-full flex justify-center origin-top ${
         folded && "scale-y-0"
-      } transition-transform delay-200`}>
-      <div className="w-[70%] flex justify-between items-center">
-        <div>
+      } transition-transform delay-200 z-[100]`}>
+      <div className="w-[80%] flex justify-between items-center backdrop-blur-lg rounded-[10px]">
+        <div className="rounded-[10px] flex items-center gap-[1rem]">
           <Image
             src={Logo}
             width={80}
             height={70}
             alt=""
             aria-hidden="true"></Image>
+          <p className="font-bold tracking-wider text-[1.25rem]">faun3</p>
         </div>
-        <div className="rounded-full bg-white text-[1.125rem]">
-          <ul className="flex gap-[2rem] font-semibold">
+        <div className="rounded-[10px] text-[1.125rem] px-[1rem] py-[0.5rem] relative">
+          <ul className="flex gap-[2rem] font-semibold mix-blend-difference">
             <li>Projects</li>
             <li>Connect</li>
           </ul>
