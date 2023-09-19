@@ -3,8 +3,8 @@ const TechStack = () => {
   //   and add a media query for mobile so this content is still visible
   return (
     <>
-      <div className="flex flex-row gap-[0.4rem] flex-wrap">
-        <span className="font-bebas heading-2">web design</span>
+      <div className="flex flex-col gap-[0.4rem] flex-wrap">
+        <span className="font-bebas heading-2 min-w-[1/3]">web design</span>
         <span className="font-bebas heading-2 min-w-[1/3]">
           web development
         </span>

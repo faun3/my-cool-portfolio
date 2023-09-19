@@ -81,7 +81,8 @@ export default function Home() {
       <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
         <Mission />
         <About />
-        <TechStack />
+        {/* this section kinda sucks. I might bin it */}
+        {/* <TechStack /> */}
         {/* <Connect /> */}
         <div className="mb-[8rem] bg-[#aba0a0] rounded-[20px] w-fit p-[4rem] px-[6rem] mx-auto">
           <div
