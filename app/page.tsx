@@ -94,20 +94,36 @@ export default function Home() {
             }}>
             <Link
               href={"#"}
-              className="body-2">
+              className="body-2 cursor-none">
               say hi :&#41;
             </Link>
           </div>
           <p className="mb-[1rem] text-[1.125rem]">myemailhere@gmail.com</p>
           <div className="flex flex-row gap-[1rem] justify-center">
-            <Link href={"#"}>
+            <Link
+              href={"#"}
+              className="cursor-none"
+              onMouseEnter={() => {
+                setCursorState("hover");
+              }}
+              onMouseLeave={() => {
+                setCursorState("default");
+              }}>
               <Image
                 src={githubIcon}
                 width={48}
                 height={48}
                 alt="github link"></Image>
             </Link>
-            <Link href={"#"}>
+            <Link
+              href={"#"}
+              onMouseEnter={() => {
+                setCursorState("hover");
+              }}
+              onMouseLeave={() => {
+                setCursorState("default");
+              }}
+              className="cursor-none">
               <Image
                 src={linkedInIcon}
                 width={48}
