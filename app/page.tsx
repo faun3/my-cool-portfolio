@@ -19,9 +19,6 @@ import bigProject from "@/public/images/bigProject.jpg";
 import mediumProject from "@/public/images/mediumProject.jpg";
 import smallProject from "@/public/images/smallProject.jpg";
 import Thanks from "@/components/Thanks";
-const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
-  ssr: false,
-});
 
 export default function Home() {
   useEffect(() => {
