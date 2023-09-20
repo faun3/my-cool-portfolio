@@ -14,6 +14,7 @@ const saint = localFont({
     },
   ],
   variable: "--font-saint",
+  display: "swap",
 });
 
 const bebasNeue = localFont({
@@ -24,6 +25,7 @@ const bebasNeue = localFont({
     },
   ],
   variable: "--font-bebas",
+  display: "swap",
 });
 
 const destra = localFont({
@@ -34,6 +36,7 @@ const destra = localFont({
     },
   ],
   variable: "--font-destra",
+  display: "swap",
 });
 
 const honey = localFont({
@@ -44,6 +47,7 @@ const honey = localFont({
     },
   ],
   variable: "--font-honey",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
