@@ -18,6 +18,7 @@ import dynamic from "next/dynamic";
 import bigProject from "@/public/images/bigProject.jpg";
 import mediumProject from "@/public/images/mediumProject.jpg";
 import smallProject from "@/public/images/smallProject.jpg";
+import Thanks from "@/components/Thanks";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -108,7 +109,7 @@ export default function Home() {
                   />
                 </Link>
               </div>
-              <p>Health Website UI Rebuild - 2023</p>
+              <p className="body-2">Health Website UI Rebuild - 2023</p>
             </div>
             <div className="flex flex-col md:flex-row gap-[3rem] items-center">
               <div className="md:basis-1/3">
@@ -128,7 +129,7 @@ export default function Home() {
                     />
                   </Link>
                 </div>
-                <p>This portfolio (yes that&apos;s cheating) - 2023</p>
+                <p className="body-2">Portfolio - 2023</p>
               </div>
 
               <div className="md:basis-2/3">
@@ -148,7 +149,7 @@ export default function Home() {
                     />
                   </Link>
                 </div>
-                <p>Blogging website - 2023</p>
+                <p className="body-2">Blogging website - 2023</p>
               </div>
             </div>
           </div>
@@ -170,7 +171,7 @@ export default function Home() {
               say hi :&#41;
             </Link>
           </div>
-          <p className="mb-[1rem] text-[1.125rem]">myemailhere@gmail.com</p>
+          <p className="mb-[1rem] body-2">myemailhere@gmail.com</p>
           <div className="flex flex-row gap-[1rem] justify-center">
             <Link
               href={"#"}
@@ -204,13 +205,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <p>Font credits</p>
-        <div className="flex flex-col gap-4">
-          <span className="font-honey uppercase">Honey</span>
-          <span className="font-saint">Saint</span>
-          <span className="font-destra">Destra</span>
-          <span className="font-bebas">BEBAS NEUE</span>
-        </div>
+        <Thanks />
       </main>
     </div>
   );
