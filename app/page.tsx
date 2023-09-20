@@ -15,6 +15,9 @@ import Link from "next/link";
 import githubIcon from "@/public/icons/githubIcon.svg";
 import linkedInIcon from "@/public/icons/linkedInIcon.svg";
 import dynamic from "next/dynamic";
+import bigProject from "@/public/images/bigProject.jpg";
+import mediumProject from "@/public/images/mediumProject.jpg";
+import smallProject from "@/public/images/smallProject.jpg";
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
@@ -82,10 +85,76 @@ export default function Home() {
       <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
         <Mission />
         <About />
-        <Projects />
-        {/* this section kinda sucks. I might bin it */}
-        {/* <TechStack /> */}
-        {/* <Connect /> */}
+        {/* projects below */}
+        <div className="flex flex-col mb-[4rem]">
+          <p className="heading-2 text-center mb-[3rem]">
+            The work I am proud of
+          </p>
+          <div>
+            <div className="mb-[2rem]">
+              <div className="overflow-hidden rounded-[20px] mb-[1rem]">
+                <Link
+                  href={"#"}
+                  className="cursor-none">
+                  <Image
+                    src={bigProject}
+                    alt="temporary placeholder"
+                    onMouseEnter={() => {
+                      setCursorState("hover");
+                    }}
+                    onMouseLeave={() => {
+                      setCursorState("default");
+                    }}
+                  />
+                </Link>
+              </div>
+              <p>Health Website UI Rebuild - 2023</p>
+            </div>
+            <div className="flex flex-col md:flex-row gap-[3rem] items-center">
+              <div className="md:basis-1/3">
+                <div className="overflow-hidden rounded-[20px] mb-[1rem]">
+                  <Link
+                    href={"#"}
+                    className="cursor-none">
+                    <Image
+                      src={smallProject}
+                      alt="temporary placeholder"
+                      onMouseEnter={() => {
+                        setCursorState("hover");
+                      }}
+                      onMouseLeave={() => {
+                        setCursorState("default");
+                      }}
+                    />
+                  </Link>
+                </div>
+                <p>This portfolio (yes that&apos;s cheating) - 2023</p>
+              </div>
+
+              <div className="md:basis-2/3">
+                <div className="overflow-hidden rounded-[20px] mb-[1rem]">
+                  <Link
+                    href={"#"}
+                    className="cursor-none">
+                    <Image
+                      src={mediumProject}
+                      alt="temporary placeholder"
+                      onMouseEnter={() => {
+                        setCursorState("hover");
+                      }}
+                      onMouseLeave={() => {
+                        setCursorState("default");
+                      }}
+                    />
+                  </Link>
+                </div>
+                <p>Blogging website - 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* connect below */}
         <div className="mb-[8rem] bg-[#aba0a0] rounded-[20px] w-fit p-[4rem] px-[6rem] mx-auto">
           <div
             className="rounded-full aspect-square w-[100%] flex justify-center items-center bg-[#eee8e8] mx-auto mb-[4rem]"
