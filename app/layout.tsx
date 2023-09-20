@@ -9,45 +9,40 @@ const workSans = Work_Sans({ subsets: ["latin"] });
 const saint = localFont({
   src: [
     {
-      path: "../public/fonts/SaintRegular.ttf",
+      path: "./fonts/SaintRegular.ttf",
       weight: "400",
     },
   ],
   variable: "--font-saint",
-  display: "swap",
 });
 
 const bebasNeue = localFont({
   src: [
     {
-      path: "../public/fonts/BebasNeue-Regular.woff2",
-      weight: "400",
+      path: "./fonts/BebasNeue-Regular.woff2",
     },
   ],
   variable: "--font-bebas",
-  display: "swap",
 });
 
 const destra = localFont({
   src: [
     {
-      path: "../public/fonts/GPDestra-Light.otf",
+      path: "./fonts/GPDestra-Light.otf",
       weight: "400",
     },
   ],
   variable: "--font-destra",
-  display: "swap",
 });
 
 const honey = localFont({
   src: [
     {
-      path: "../public/fonts/HoneyDemo-Light.otf",
+      path: "./fonts/HoneyDemo-Light.otf",
       weight: "400",
     },
   ],
   variable: "--font-honey",
-  display: "swap",
 });
 
 export const metadata: Metadata = {
