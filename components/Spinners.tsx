@@ -9,7 +9,7 @@ const Spinners = () => {
         <div></div>
         <p>And a decade of experience with programming</p>
       </div>
-      <p>It's my mission to make ideas into breathtaking designs</p>
+      <p>It&apos;s my mission to make ideas into breathtaking designs</p>
     </>
   );
 };
