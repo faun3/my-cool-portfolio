@@ -6,7 +6,7 @@ import openEye from "@/public/images/openEye.png";
 const Header = () => {
   const [isEyeOpen, setIsEyeOpen] = useState(true);
   return (
-    <header className="my-[3rem]">
+    <header className="mb-[3rem] pt-[3rem]">
       <div className="font-bebas text-[8rem]">
         <div
           className="flex items-center gap-[1rem]"
@@ -37,6 +37,9 @@ const Header = () => {
               />
             )}
           </div>
+        </div>
+        <div>
+          <span>from eastern europe</span>
         </div>
       </div>
     </header>
