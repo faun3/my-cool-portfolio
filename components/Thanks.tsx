@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 const Thanks = () => {
   return (
     <div className="flex flex-col gap-[3rem] pb-[3rem] items-center justify-center">

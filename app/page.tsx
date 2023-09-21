@@ -1,4 +1,5 @@
 "use client";
+import Header from "@/components/Header";
 import TextMarquee from "@/components/TextMarquee";
 import Image from "next/image";
 import Mission from "@/components/Mission";
@@ -58,14 +59,16 @@ export default function Home() {
         className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none flex justify-center items-center"
         animate={cursorState}
         variants={cursorVariants}
-        transition={{ ease: "easeOut", duration: 0.2 }}>
+        transition={{ ease: "easeOut", duration: 0.2 }}
+      >
         {cursorState === "hover" && (
           <svg
             width="48"
             height="23"
             viewBox="0 0 64 35"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
@@ -75,8 +78,9 @@ export default function Home() {
           </svg>
         )}
       </motion.div>
-      <TextMarquee />
+      {/* <TextMarquee /> */}
       <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
+        <Header />
         <Mission />
         <About />
         {/* projects below */}
@@ -87,9 +91,7 @@ export default function Home() {
           <div>
             <div className="mb-[2rem]">
               <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                <Link
-                  href={"#"}
-                  className="cursor-none">
+                <Link href={"#"} className="cursor-none">
                   <Image
                     src={bigProject}
                     alt="temporary placeholder"
@@ -107,9 +109,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row gap-[3rem] items-center">
               <div className="md:basis-1/3">
                 <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                  <Link
-                    href={"#"}
-                    className="cursor-none">
+                  <Link href={"#"} className="cursor-none">
                     <Image
                       src={smallProject}
                       alt="temporary placeholder"
@@ -127,9 +127,7 @@ export default function Home() {
 
               <div className="md:basis-2/3">
                 <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                  <Link
-                    href={"#"}
-                    className="cursor-none">
+                  <Link href={"#"} className="cursor-none">
                     <Image
                       src={mediumProject}
                       alt="temporary placeholder"
@@ -157,10 +155,9 @@ export default function Home() {
             }}
             onMouseLeave={() => {
               setCursorState("default");
-            }}>
-            <Link
-              href={"#"}
-              className="body-2 cursor-none">
+            }}
+          >
+            <Link href={"#"} className="body-2 cursor-none">
               say hi :&#41;
             </Link>
           </div>
@@ -174,12 +171,14 @@ export default function Home() {
               }}
               onMouseLeave={() => {
                 setCursorState("default");
-              }}>
+              }}
+            >
               <Image
                 src={githubIcon}
                 width={48}
                 height={48}
-                alt="github link"></Image>
+                alt="github link"
+              ></Image>
             </Link>
             <Link
               href={"#"}
@@ -189,12 +188,14 @@ export default function Home() {
               onMouseLeave={() => {
                 setCursorState("default");
               }}
-              className="cursor-none">
+              className="cursor-none"
+            >
               <Image
                 src={linkedInIcon}
                 width={48}
                 height={48}
-                alt="linked in link"></Image>
+                alt="linked in link"
+              ></Image>
             </Link>
           </div>
         </div>
