@@ -18,11 +18,7 @@ const Thanks = () => {
         </div>
         <div>
           <p className="heading-2">Fonts used</p>
-          <p className="body-2">Honey - by Melina Sweet</p>
-          <p className="body-2">Saint - by Liza Dushnota</p>
-          <p className="body-2">Destra - by Cedric Rossignol Brunet</p>
-          <p className="body-2">Monor - by Cedric Rossignol Brunet</p>
-          <p className="body-2">Bebas Neune - from Fontshare</p>
+          <p className="body-2">Bebas Neue - from Fontshare</p>
         </div>
       </div>
     </div>
