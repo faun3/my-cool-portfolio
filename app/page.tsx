@@ -60,7 +60,7 @@ export default function Home() {
       <Nav />
       <div className="cursor-none">
         <motion.div
-          className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none flex justify-center items-center"
+          className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none justify-center items-center md:flex hidden"
           animate={cursorState}
           variants={cursorVariants}
           transition={{ ease: "easeOut", duration: 0.2 }}
@@ -83,7 +83,7 @@ export default function Home() {
           )}
         </motion.div>
         {/* <TextMarquee /> */}
-        <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto">
+        <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto pt-[4rem]">
           <Header />
           <Mission />
           <About />
@@ -150,7 +150,7 @@ export default function Home() {
 
           {/* connect below */}
           <div
-            className="mb-[8rem] bg-[#aba0a0] rounded-[20px] w-fit p-[4rem] px-[6rem] mx-auto"
+            className="mb-[8rem] bg-[#aba0a0] rounded-[20px] p-[4rem] px-[6rem] mx-auto md:max-w-[45%] mt-[8rem]"
             id="connect"
           >
             <div
@@ -166,8 +166,9 @@ export default function Home() {
                 say hi :&#41;
               </Link>
             </div>
-            <p className="mb-[1rem] body-2">myemailhere@gmail.com</p>
-            <div className="flex flex-row gap-[1rem] justify-center">
+            {/* commented out email because it messed with the layout a bit too much */}
+            {/* <p className="mb-[1rem]">myemailhere@gmail.com</p> */}
+            <div className="flex flex-row gap-[3rem] justify-center">
               <Link
                 href={"#"}
                 className="cursor-none"
