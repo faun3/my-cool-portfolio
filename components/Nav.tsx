@@ -96,8 +96,8 @@ const Nav = () => {
           </div>
         </div>
         {isOpen && (
-          <div className={`w-full  rounded-b-[10px] px-[1rem] py-[1rem]`}>
-            <ul className="flex flex-col gap-[2rem] font-semibold items-center text-[1.25rem]">
+          <div className={`w-full  rounded-b-[10px] px-[2rem] py-[1rem]`}>
+            <ul className="flex flex-col gap-[2rem] font-semibold items-end text-[1.25rem]">
               <li>
                 <a
                   onClick={() => {
