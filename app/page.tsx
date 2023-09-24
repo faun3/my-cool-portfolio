@@ -83,7 +83,7 @@ export default function Home() {
           )}
         </motion.div>
         {/* <TextMarquee /> */}
-        <main className="md:w-[864px] lg:w-[1184px] w-[85%] mx-auto pt-[4rem]">
+        <main className="md:w-[700px] lg:w-[1120px] w-[85%] mx-auto pt-[4rem]">
           <Header />
           <Mission />
           <About />
@@ -150,11 +150,11 @@ export default function Home() {
 
           {/* connect below */}
           <div
-            className="mb-[8rem] bg-[#aba0a0] rounded-[20px] p-[4rem] px-[6rem] mx-auto md:max-w-[45%] mt-[8rem]"
+            className="mb-[8rem] bg-[#aba0a0] rounded-[20px] p-[4rem] mx-auto md:max-w-[45%] mt-[8rem]"
             id="connect"
           >
             <div
-              className="rounded-full aspect-square w-[100%] flex justify-center items-center bg-[#eee8e8] mx-auto mb-[4rem]"
+              className="rounded-full aspect-square w-[100%] flex justify-center items-center bg-[#eee8e8] mb-[4rem]"
               onMouseEnter={() => {
                 setCursorState("hover");
               }}
