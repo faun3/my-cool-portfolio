@@ -74,23 +74,23 @@ const Nav = () => {
               <path
                 d="M40 4H25"
                 stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M17 4H2"
                 stroke="black"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M18 4C18 4.79565 18.3161 5.55871 18.8787 6.12132C19.4413 6.68393 20.2044 7 21 7C21.7956 7 22.5587 6.68393 23.1213 6.12132C23.6839 5.55871 24 4.79565 24 4C24 3.20435 23.6839 2.44129 23.1213 1.87868C22.5587 1.31607 21.7956 1 21 1C20.2044 1 19.4413 1.31607 18.8787 1.87868C18.3161 2.44129 18 3.20435 18 4Z"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
