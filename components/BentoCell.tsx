@@ -13,7 +13,7 @@ const BentoCell = ({ pathToIcon, text }: TBentoCellProps) => {
         src={pathToIcon}
         alt=""
         aria-hidden="true"
-        className="top-0 left-0 saturate-60"
+        className="top-0 left-0 saturate-60 absolute"
         fill={true}
       />
       <p className={`body-2 z-10 bottom-[15%] absolute`}>{text}</p>

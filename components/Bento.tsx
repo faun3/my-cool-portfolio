@@ -5,16 +5,18 @@ const Bento = () => {
   return (
     <div className="w-full">
       <div className="flex md:flex-row flex-col">
-        <div className="flex flex-col">
+        <div className="flex flex-col aspect-square w-1/3">
           <BentoCell
             pathToIcon={bentoTest}
             text="react"
           />
 
-          <BentoCell
-            pathToIcon={bentoTest}
-            text="react"
-          />
+          <div className="aspect-square w-1/3">
+            <BentoCell
+              pathToIcon={bentoTest}
+              text="react"
+            />
+          </div>
         </div>
         <BentoCell
           pathToIcon={bentoTest}
