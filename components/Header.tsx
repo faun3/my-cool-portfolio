@@ -8,7 +8,7 @@ const Header = () => {
   const [isEyeOpen, setIsEyeOpen] = useState(true);
   return (
     <header
-      className="mb-[6rem] pt-[3rem]"
+      className="mb-[10rem] pt-[3rem]"
       id="home">
       <div className="font-bebas text-[8rem] md:text-[10rem]">
         <div
