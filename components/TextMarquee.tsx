@@ -10,7 +10,17 @@ export default function TextMarquee() {
         <span className="m-4 uppercase font-bebas">
           die boring or live trying
         </span>
-        <div className="w-[1em] h-[1em]">
+        <div className="w-[1em] h-[1em] m-4">
+          <Image
+            src={star}
+            alt=""
+            aria-hidden
+          />
+        </div>
+        <span className="m-4 uppercase font-bebas">
+          die boring or live trying
+        </span>
+        <div className="w-[1em] h-[1em] m-4">
           <Image
             src={star}
             alt=""
@@ -22,7 +32,17 @@ export default function TextMarquee() {
         <span className="m-4 uppercase font-bebas">
           die boring or live trying
         </span>
-        <div className="w-[1em] h-[1em]">
+        <div className="w-[1em] h-[1em] m-4">
+          <Image
+            src={star}
+            alt=""
+            aria-hidden
+          />
+        </div>
+        <span className="m-4 uppercase font-bebas">
+          die boring or live trying
+        </span>
+        <div className="w-[1em] h-[1em] m-4">
           <Image
             src={star}
             alt=""
