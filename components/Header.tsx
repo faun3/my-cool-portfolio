@@ -20,7 +20,7 @@ const Header = () => {
             setIsEyeOpen((isEyeOpen) => !isEyeOpen);
           }}>
           <span>artist</span>
-          <div className="h-[1em] w-[1em] relative">
+          <div className=" w-[1em] relative aspect-square">
             {isEyeOpen && (
               <Image
                 src={openEye}
@@ -35,7 +35,7 @@ const Header = () => {
                 src={closedEye}
                 alt=""
                 aria-hidden="true"
-                className="absolute left-0 top-0"
+                className="object-fit absolute left-0 top-0"
               />
             )}
           </div>
