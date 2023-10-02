@@ -1,25 +1,17 @@
 const Thanks = () => {
   return (
-    <div className="flex flex-col gap-[3rem] pb-[3rem] items-center justify-center">
-      <div>
-        <div className="flex flex-col md:flex-row md:gap-[4rem] md:mb-[4rem]">
-          <div>
-            <p className="heading-2">Special thanks</p>
-            <p className="body-2">B💓</p>
-            <p className="body-2">mom</p>
-            <p className="body-2">friends all over</p>
-          </div>
-          <div>
-            <p className="heading-2">Inspiration</p>
-            <p className="body-2">awwwards stuff</p>
-            <p className="body-2">locomotive.ca</p>
-            <p className="body-2">youtube and more</p>
-          </div>
-        </div>
+    <div className="gap-[3rem] pb-[3rem]">
+      <div className="flex flex-col  md:gap-[4rem] md:pb-[4rem] font-semibold items-center">
         <div>
-          <p className="heading-2">Fonts used</p>
-          <p className="body-2">Bebas Neue - from Fontshare</p>
+          <p className="heading-2">Special thanks</p>
+          <p className="body-2">b(b)💓</p>
+          <p className="body-2">mom</p>
+          <p className="body-2">friends all over</p>
         </div>
+        <p className="body-2 font-semibold w-[35ch]">
+          made with various amounts of love, blood, sweat, and tears in
+          Bucharest, 🇷🇴
+        </p>
       </div>
     </div>
   );

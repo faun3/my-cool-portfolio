@@ -6,6 +6,9 @@
   .pause {
     animation-play-state: paused;
   }
+  .text-wrap-balance {
+    text-wrap: balance;
+  }
 }
 
 @layer base {
