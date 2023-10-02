@@ -11,7 +11,7 @@ const About = () => {
           photography, drawing and painting. My life goal is making my house
           look overrun by plants.
         </p>
-        <Bento />
+        {/* <Bento /> */}
       </div>
     </>
   );
