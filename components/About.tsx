@@ -17,14 +17,7 @@ const About = () => {
       <motion.div
         className="w-full rounded-[20px] overflow-hidden"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
-        <Image
-          className="object-cover"
-          src={aboutImage}
-          alt="room with plants"
-        ></Image>
-      </motion.div>
+        whileInView={{ opacity: 1 }}></motion.div>
     </div>
   );
 };

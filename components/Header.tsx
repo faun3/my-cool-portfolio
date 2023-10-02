@@ -7,7 +7,9 @@ import casino from "@/public/images/headerCasino.jpg";
 const Header = () => {
   const [isEyeOpen, setIsEyeOpen] = useState(true);
   return (
-    <header className="mb-[3rem] pt-[3rem]" id="home">
+    <header
+      className="mb-[6rem] pt-[3rem]"
+      id="home">
       <div className="font-bebas text-[8rem] md:text-[10rem]">
         <div
           className="flex items-center gap-[2rem]"
@@ -16,8 +18,7 @@ const Header = () => {
           }}
           onMouseLeave={() => {
             setIsEyeOpen((isEyeOpen) => !isEyeOpen);
-          }}
-        >
+          }}>
           <span>artist</span>
           <div className="h-[1em] w-[1em] relative">
             {isEyeOpen && (

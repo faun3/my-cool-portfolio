@@ -63,16 +63,14 @@ export default function Home() {
           className="bg-black fixed top-0 left-0 h-[24px] w-[24px] rounded-full z-50 pointer-events-none justify-center items-center lg:flex hidden"
           animate={cursorState}
           variants={cursorVariants}
-          transition={{ ease: "easeOut", duration: 0.2 }}
-        >
+          transition={{ ease: "easeOut", duration: 0.2 }}>
           {cursorState === "hover" && (
             <svg
               width="48"
               height="23"
               viewBox="0 0 64 35"
               fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+              xmlns="http://www.w3.org/2000/svg">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -85,15 +83,22 @@ export default function Home() {
         {/* <TextMarquee /> */}
         <main className="md:w-[700px] lg:w-[1120px] w-[85%] mx-auto pt-[4rem]">
           <Header />
-          <Mission />
+          {/* <Mission /> */}
           <About />
+          <div className="w-screen ml-[calc(-50vw+50%)]">
+            <TextMarquee />
+          </div>
           {/* projects below */}
-          <div className="flex flex-col mb-[4rem]" id="projects">
+          <div
+            className="flex flex-col mb-[4rem]"
+            id="projects">
             <p className="heading-2 text-center mb-[3rem]">selected works</p>
             <div>
               <div className="mb-[2rem]">
                 <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                  <Link href={"#"} className="cursor-none">
+                  <Link
+                    href={"#"}
+                    className="cursor-none">
                     <Image
                       src={bigProject}
                       alt="temporary placeholder"
@@ -111,7 +116,9 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-[3rem] items-center">
                 <div className="md:basis-1/3">
                   <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                    <Link href={"#"} className="cursor-none">
+                    <Link
+                      href={"#"}
+                      className="cursor-none">
                       <Image
                         src={smallProject}
                         alt="temporary placeholder"
@@ -129,7 +136,9 @@ export default function Home() {
 
                 <div className="md:basis-2/3">
                   <div className="overflow-hidden rounded-[20px] mb-[1rem]">
-                    <Link href={"#"} className="cursor-none">
+                    <Link
+                      href={"#"}
+                      className="cursor-none">
                       <Image
                         src={mediumProject}
                         alt="temporary placeholder"
@@ -151,8 +160,7 @@ export default function Home() {
           {/* connect below */}
           <div
             className="mb-[8rem] bg-[#aba0a0] rounded-[20px] p-[4rem] mx-auto md:max-w-[45%] mt-[8rem]"
-            id="connect"
-          >
+            id="connect">
             <div
               className="rounded-full aspect-square w-[100%] flex justify-center items-center bg-[#eee8e8] mb-[4rem]"
               onMouseEnter={() => {
@@ -160,9 +168,10 @@ export default function Home() {
               }}
               onMouseLeave={() => {
                 setCursorState("default");
-              }}
-            >
-              <Link href={"#"} className="body-2 cursor-none">
+              }}>
+              <Link
+                href={"#"}
+                className="body-2 cursor-none">
                 say hi :&#41;
               </Link>
             </div>
@@ -177,14 +186,12 @@ export default function Home() {
                 }}
                 onMouseLeave={() => {
                   setCursorState("default");
-                }}
-              >
+                }}>
                 <Image
                   src={githubIcon}
                   width={48}
                   height={48}
-                  alt="github link"
-                ></Image>
+                  alt="github link"></Image>
               </Link>
               <Link
                 href={"#"}
@@ -194,14 +201,12 @@ export default function Home() {
                 onMouseLeave={() => {
                   setCursorState("default");
                 }}
-                className="cursor-none"
-              >
+                className="cursor-none">
                 <Image
                   src={linkedInIcon}
                   width={48}
                   height={48}
-                  alt="linked in link"
-                ></Image>
+                  alt="linked in link"></Image>
               </Link>
             </div>
           </div>
